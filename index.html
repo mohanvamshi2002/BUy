@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J7TEQYG3S7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J7TEQYG3S7');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Product Landing Page</title>
+  <!-- Load Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Favicon placeholder -->
+  <link rel="icon" type="image/png" href="https://placehold.co/32x32/000/fff?text=TS">
+  <style>
+    /* Custom styles for responsiveness beyond Tailwind's default breakpoints, if needed */
+    /* Although Tailwind's responsive classes handle most cases,
+       this section is kept for potential custom media queries if the design
+       demands something highly specific. */
+
+    /* Apply Inter font family to the body */
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+  <!-- Header Section -->
+  <header class="bg-gray-800 text-white p-6 text-center shadow-md">
+    <h1 class="text-4xl font-bold mb-2">Welcome to Tech Store</h1>
+    <p class="text-lg">Best deals on cutting-edge gadgets</p>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="container mx-auto mt-10 p-4 flex flex-col md:flex-row justify-center items-center gap-6 flex-grow">
+    <!-- Product Card: Smart Watch -->
+    <div class="product bg-white p-6 rounded-xl shadow-lg flex-1 text-center max-w-sm w-full transition-transform transform hover:scale-105 duration-300">
+      <h2 class="text-3xl font-semibold text-gray-800 mb-4">Smart Watch</h2>
+      <!-- Placeholder image for Smart Watch -->
+      <img src="https://placehold.co/300x200/4F46E5/ffffff?text=Smart+Watch" alt="Sleek Smart Watch" class="w-full h-auto rounded-md mb-4 object-cover">
+      <p class="text-gray-600 text-lg mb-6">Track your fitness, receive notifications, and stay connected with this sleek and powerful smartwatch.</p>
+      <a href="product.html?product=watch" class="buy-button inline-block bg-green-600 text-white py-3 px-8 rounded-lg font-bold text-xl hover:bg-green-700 transition duration-300 focus:outline-none focus:ring-4 focus:ring-green-300 focus:ring-opacity-75">Buy Now</a>
+    </div>
+
+    <!-- Product Card: Wireless Headphones -->
+    <div class="product bg-white p-6 rounded-xl shadow-lg flex-1 text-center max-w-sm w-full transition-transform transform hover:scale-105 duration-300">
+      <h2 class="text-3xl font-semibold text-gray-800 mb-4">Wireless Headphones</h2>
+      <!-- Placeholder image for Wireless Headphones -->
+      <img src="https://placehold.co/300x200/F59E0B/ffffff?text=Headphones" alt="Noise-cancelling Wireless Headphones" class="w-full h-auto rounded-md mb-4 object-cover">
+      <p class="text-gray-600 text-lg mb-6">Immerse yourself in rich audio with noise cancellation, deep bass, and unparalleled comfort.</p>
+      <a href="product.html?product=headphones" class="buy-button inline-block bg-green-600 text-white py-3 px-8 rounded-lg font-bold text-xl hover:bg-green-700 transition duration-300 focus:outline-none focus:ring-4 focus:ring-green-300 focus:ring-opacity-75">Buy Now</a>
+    </div>
+  </main>
+
+  <!-- Footer Section (Optional, but good practice) -->
+  <footer class="bg-gray-800 text-white p-4 text-center mt-auto shadow-inner">
+    <p>&copy; 2025 Tech Store. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
